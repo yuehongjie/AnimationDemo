@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        android:fromXDelta      起始X坐标
+        android:toXDelta        终止X坐标
+        android:fromYDelta      起始Y坐标
+        android:toYDelta        终止Y坐标
+        都是三种取值方式：
+            "50"   表明坐标类型相当于 Animation.ABSOLUTE 绝对位置
+            "50%"  表明坐标类型相当于 Animation.RELATIVE_TO_SELF 相对自身
+            "50%p" 表明坐标类型相当于 Animation.RELATIVE_TO_PARENT 相对于父控件
+
+        此处效果：X(水平)方向从父控件的最左边移动到最右边，Y(竖直)方向从父控件的 1/5 移动到 4/5
+    -->
+
+    <translate
+        android:fromXDelta="0"
+        android:toXDelta="100%p"
+        android:fromYDelta="20%p"
+        android:toYDelta="80%p"
+        android:duration="2000"/>
+
+</set>

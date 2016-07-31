@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_frame_xml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/iv_frame_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="100dp">
+        <Button
+            android:id="@+id/btn_frame_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startFrame"
+            android:text="开始XML"
+            android:textColor="#000"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btn_frame_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn_frame_start"
+            android:onClick="stopFrame"
+            android:text="停止XML"
+            android:textColor="#000"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btn_frame_start_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="startFrameByCode"
+            android:text="开始Code"
+            android:textColor="#000"
+            android:textSize="18sp"/>
+
+        <Button
+            android:id="@+id/btn_frame_stop_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn_frame_start_code"
+            android:onClick="stopFrameByCode"
+            android:text="停止Code"
+            android:textColor="#000"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+</LinearLayout>

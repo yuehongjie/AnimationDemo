@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    animation-list： 动画帧序列
+    oneshot ：false 重复
+              true 执行一次
+ -->
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <!--
+        item 子标签 添加帧图片 和 每帧时长
+    -->
+    <item android:drawable="@drawable/h1" android:duration="100"/>
+    <item android:drawable="@drawable/h2" android:duration="100"/>
+
+</animation-list>

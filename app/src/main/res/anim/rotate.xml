@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        android:fromDegrees 旋转起始角度
+        android:toDegrees 旋转终止角度 +360 代表顺时针 360°；- 表示逆时针
+        android:pivotX 表示圆心 X 坐标 该值有三种设置方法：
+        android:pivotX="50"   表明坐标类型相当于 Animation.ABSOLUTE 绝对位置
+        android:pivotX="50%"  表明坐标类型相当于 Animation.RELATIVE_TO_SELF 相对自身
+        android:pivotX="50%p" 表明坐标类型相当于 Animation.RELATIVE_TO_PARENT 相对于父控件
+
+        此处效果：以控件自身中心为圆心，逆时针旋转360°
+    -->
+    <rotate
+        android:fromDegrees="0"
+        android:toDegrees="-360"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:duration="2000"/>
+
+</set>

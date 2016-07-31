@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/iv_chry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/an_chry"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/rotate_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="旋转 CODE"
+            android:onClick="startRotateByCode"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/rotate_code"
+            android:text="旋转 XML"
+            android:onClick="startRotateByXML"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/scale_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="缩放 CODE"
+            android:onClick="startScaleByCode"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/scale_code"
+            android:text="缩放 XML"
+            android:onClick="startScaleByXML"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/translate_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="移动 CODE"
+            android:onClick="startTranslateByCode"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/translate_code"
+            android:text="移动 XML"
+            android:onClick="startTranslateByXML"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/alpha_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="淡入淡出 CODE"
+            android:onClick="startAlphaByCode"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/alpha_code"
+            android:text="淡入淡出 XML"
+            android:onClick="startAlphaByXML"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/animation_set_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="动画集合 CODE"
+            android:onClick="startAnimationSetByCode"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/animation_set_code"
+            android:text="动画集合 XML"
+            android:onClick="startAnimationSetByXML"/>
+    </RelativeLayout>
+
+</LinearLayout>

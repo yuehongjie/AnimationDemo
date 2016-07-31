@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        android:fromXScale="0.5"    X轴(横边)起始大小
+        android:toXScale="2.0"      X轴终止大小
+        android:fromYScale="0.5"    Y轴(竖边)起始大小
+        android:toYScale="2.0"      Y轴终止大小
+        android:pivotX="50%"        缩放中心的X坐标
+        android:pivotY="50%"        缩放中心的Y坐标
+
+        pivotX pivotY 三种设置方法：
+        android:pivotX="50"   表明坐标类型相当于 Animation.ABSOLUTE 绝对位置
+        android:pivotX="50%"  表明坐标类型相当于 Animation.RELATIVE_TO_SELF 相对自身
+        android:pivotX="50%p" 表明坐标类型相当于 Animation.RELATIVE_TO_PARENT 相对于父控件
+
+        此处效果：以控件中心为坐标原点，从原尺寸的 1/2 放大到原尺寸的 2 倍
+    -->
+    <scale
+        android:fromXScale="0.5"
+        android:toXScale="2.0"
+        android:fromYScale="0.5"
+        android:toYScale="2.0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:duration="2000"/>
+
+</set>
